@@ -1,0 +1,8 @@
+
+<div class="champion-grid">
+  <div *ngFor="let champ of champions" class="champion-card">
+    <img [src]="'https://ddragon.leagueoflegends.com/cdn/14.13.1/img/champion/' + champ.image.full" [alt]="champ.name" />
+    <h3>{{ champ.name }}</h3>
+    <p>{{ champ.title }}</p>
+  </div>
+</div>

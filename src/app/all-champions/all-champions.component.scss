@@ -1,0 +1,26 @@
+.champion-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 96px auto;
+  gap: 1rem;
+}
+
+.champion-card {
+  width: 148px;
+  padding: 1rem;
+  background: #111;
+  border-radius: 0.5rem;
+  text-align: center;
+  color: white;
+&:hover {
+    transition: transform 0.25s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+  img {
+    width: 100%;
+    border-radius: 0.25rem;
+  }
+}
