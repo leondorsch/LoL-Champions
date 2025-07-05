@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ChampionService {
-  private apiUrl = 'https://ddragon.leagueoflegends.com/cdn/14.13.1/data/de_DE/champion.json';
+  private apiUrl = 'https://ddragon.leagueoflegends.com/cdn/14.13.1/data/en_US/champion.json';
 
   constructor(private http: HttpClient) {}
 

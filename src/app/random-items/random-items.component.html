@@ -1,0 +1,10 @@
+<div class="item-container">
+    <div *ngFor="let item of randomItems" class="item-card">
+        <img [src]="'https://ddragon.leagueoflegends.com/cdn/14.13.1/img/item/' + item.image.full" [alt]="item.name" />
+        <h3>{{ item.name }}</h3>
+        <p>{{ item.descrpition }}</p>
+    </div>
+</div>
+<div class="reroll-container">
+    <button class="reroll-button" (click)="loadRandomItems()">Reroll</button>
+</div>

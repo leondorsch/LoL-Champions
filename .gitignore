@@ -40,3 +40,7 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Umgebungsdateien ignorieren (optional, wenn du den Key lokal speichern willst)
+src/environments/environment.ts
+

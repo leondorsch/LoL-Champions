@@ -1,0 +1,50 @@
+.champion-card {
+  width: 148px;
+  padding: 1rem;
+  background: #111;
+  border-radius: 0.5rem;
+  text-align: center;
+  color: white;
+&:hover {
+    transition: transform 0.25s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+  img {
+    width: 100%;
+    border-radius: 0.25rem;
+  }
+}
+
+.reroll-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.reroll-button {
+  background: linear-gradient(145deg, #1b2838, #0f1724);
+  color: #e3c77c;
+  border: 2px solid #e3c77c;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(227, 199, 124, 0.3);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.reroll-button:hover {
+  background: linear-gradient(145deg, #2c3a4f, #1a2433);
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(227, 199, 124, 0.6);
+  transform: scale(1.05);
+}
+
+.reroll-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 10px rgba(227, 199, 124, 0.8) inset;
+}

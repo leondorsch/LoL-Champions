@@ -9,6 +9,10 @@ import { RouterModule } from '@angular/router';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { MenuCardComponent } from './menu-card/menu-card.component';
 import { AllChampionsComponent } from './all-champions/all-champions.component';
+import { FreeChampsComponent } from './champ-rotation/champ-rotation.component';
+import { RandomChampionComponent } from './random-champion/random-champion.component';
+import { RandomItemsComponent } from './random-items/random-items.component';
+
 
 @NgModule({
   declarations: [
@@ -16,6 +20,9 @@ import { AllChampionsComponent } from './all-champions/all-champions.component';
     NavBarComponent,
     MenuCardComponent,
     AllChampionsComponent,
+    FreeChampsComponent,
+    RandomChampionComponent,
+    RandomItemsComponent
   ],
   imports: [
     BrowserModule,
