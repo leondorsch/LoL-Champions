@@ -43,4 +43,5 @@ Thumbs.db
 
 # Umgebungsdateien ignorieren (optional, wenn du den Key lokal speichern willst)
 src/environments/environment.ts
+src/environments/environment.prod.ts
 
