@@ -6,6 +6,7 @@ import { RandomChampionComponent } from './random-champion/random-champion.compo
 import { RandomItemsComponent } from './random-items/random-items.component';
 
 const routes: Routes = [
+  {path: '', component: AllChampionsComponent},
   {path: 'champions', component: AllChampionsComponent},
   {path: 'rotation', component: FreeChampsComponent},
   {path: 'randomChamp', component: RandomChampionComponent},

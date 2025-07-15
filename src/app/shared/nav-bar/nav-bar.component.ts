@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { ElementRef } from '@angular/core';
+import { HostListener } from '@angular/core';
+import { ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',

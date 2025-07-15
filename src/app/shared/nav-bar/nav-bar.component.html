@@ -3,5 +3,5 @@
         <img routerLink="/start" class="teemo-logo" src="assets/img/teemo.png" alt="">
         <img (click)="openMenu()" class="menu-img" src="assets/img/burger-menu.svg" alt="">
     </div>
-    <app-menu-card *ngIf="menuOpen"></app-menu-card>
+    <app-menu-card #menuCard *ngIf="menuOpen"></app-menu-card>
 </nav>
