@@ -13,7 +13,7 @@ export class FreeChampsComponent implements OnInit {
   constructor(
     private championService: ChampionService,
     private ChampionRotationService: ChampionRotationService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.loadFreeChamps();
@@ -22,15 +22,15 @@ export class FreeChampsComponent implements OnInit {
   loadFreeChamps(): void {
     this.championService.getChampions().subscribe((champData: any) => {
       let allChamps = Object.values(champData.data);
-      
+
       this.ChampionRotationService.getFreeRotation().subscribe((rotation: any) => {
         let freeIds: number[] = rotation.freeChampionIds;
 
-        
-        this.freeChamps = allChamps.filter((champ: any) =>
-          freeIds.includes(+champ.key) 
+
+
+        this.freeChamps = allChamps.filter((champ: any) => 
+          freeIds.includes(+champ.key)
         );
-        console.log(this.freeChamps)
       });
     });
   }

@@ -1,5 +1,5 @@
 
-<div class="champion-card">
+<div class="champion-card" *ngIf="champion">
     <img [src]="'https://ddragon.leagueoflegends.com/cdn/14.13.1/img/champion/' + champion.image.full" [alt]="champion.name" />
     <h3>{{ champion.name }}</h3>
     <p>{{ champion.title }}</p>

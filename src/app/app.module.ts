@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { RouterModule } from '@angular/router';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 import { MenuCardComponent } from './menu-card/menu-card.component';
 import { AllChampionsComponent } from './all-champions/all-champions.component';
 import { FreeChampsComponent } from './champ-rotation/champ-rotation.component';
 import { RandomChampionComponent } from './random-champion/random-champion.component';
 import { RandomItemsComponent } from './random-items/random-items.component';
+import { SharedComponent } from './shared/shared.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { RandomItemsComponent } from './random-items/random-items.component';
     AllChampionsComponent,
     FreeChampsComponent,
     RandomChampionComponent,
-    RandomItemsComponent
+    RandomItemsComponent,
+    SharedComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

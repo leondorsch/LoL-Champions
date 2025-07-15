@@ -7,8 +7,33 @@
     font-style: normal;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: 'Cinzel'; }
+
+
+body {
+    margin: 0;
+    font-family: 'Cinzel';
+    background-image: url('/assets/img/teemo-wallpaper.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+app-all-champions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+app-free-champs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
 app-menu-card {
     display: flex;
@@ -17,12 +42,55 @@ app-menu-card {
     margin: 0 auto;
 }
 
+
 app-random-champion {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+app-random-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 16px;
+}
+
+/* Entfernt Scrollbar-Pfeile in Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background: #1c1c1c;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #c89b3c, #785a28);
+  border-radius: 10px;
+  border: 2px solid #1c1c1c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #e0c97f, #a27c39);
+}
+
+/* Für Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c89b3c #1c1c1c;
 }
 
 

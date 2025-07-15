@@ -17,12 +17,13 @@ export class RandomChampionComponent implements OnInit {
 
   loadRandomChamp(): void {
     this.championService.getChampions().subscribe((champData: any) => {
-      const allChamps = Object.values(champData.data);
+      let allChamps = Object.values(champData.data);
       
-      const randomIndex = Math.floor(Math.random() * allChamps.length);
-      const randomChampion = allChamps[randomIndex];
+      let randomIndex = Math.floor(Math.random() * allChamps.length);
+      let randomChampion = allChamps[randomIndex];
       
       this.champion = randomChampion;
+      console.log(this.champion)
     });
   }
 
