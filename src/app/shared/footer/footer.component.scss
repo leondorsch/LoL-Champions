@@ -5,3 +5,40 @@ footer {
     position: fixed;
     bottom: 0;
 }
+
+.footer-container {
+    max-width: 1440px;
+    height: 100%;
+    display: flex;
+    gap: 24px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0 24px;
+    justify-content: center;
+}
+
+.privacy-policy {
+    >span {
+        color: white;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.imprint {
+    >span {
+        color: white;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.seperator {
+    background-color: white;
+    height: 1px;
+    width: 24px;
+    transform: rotate(90deg);
+    border-radius: 50px;
+}
