@@ -24,6 +24,10 @@
     gap: 8px;
     flex-wrap: wrap;
     justify-content: center;
+    overflow-y: scroll;
+    margin-right: auto;
+    margin-left: auto;
+    max-height: 480px;
 }
 
 .item-card {
@@ -32,8 +36,8 @@
     gap: 16px;
     align-items: center;
     >img {
-        height: 80px;
-        width: 80px;
+        height: 120px;
+        width: 120px;
     }
 }
 

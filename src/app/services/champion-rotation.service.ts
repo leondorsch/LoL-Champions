@@ -8,11 +8,11 @@ import { environment } from 'src/environments/environment';
 })
 
 export class ChampionRotationService {
-    private backendUrl = 'https://riot-backend.onrender.com/rotation';
+    private apiKey = `https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=${environment.riotApiKey}`;
 
     constructor(private http: HttpClient) { }
 
     getFreeRotation(): Observable<any> {
-        return this.http.get(this.backendUrl);
+        return this.http.get(this.apiKey);
     }
 }

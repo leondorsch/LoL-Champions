@@ -1,12 +1,4 @@
 export const environment = {
-    production: false,
-    firebaseConfig : {
-        apiKey: "AIzaSyBLm_gi226-JvNwZzHcXpjtUNYlOhh9UnA",
-        authDomain: "lol-champions-cbaee.firebaseapp.com",
-        projectId: "lol-champions-cbaee",
-        storageBucket: "lol-champions-cbaee.firebasestorage.app",
-        messagingSenderId: "359195088573",
-        appId: "1:359195088573:web:e6218b83ac583638ad09d4"
-    },
-} 
-
+  production: false,
+  riotApiKey: 'RGAPI-c1b45ca6-a354-4729-802e-69f3c692dbe0'
+};

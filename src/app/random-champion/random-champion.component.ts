@@ -9,6 +9,7 @@ import { ChampionService } from '../services/champion.service';
 })
 export class RandomChampionComponent implements OnInit {
   champion: any = null; 
+  picking: boolean = false;
   constructor(private championService: ChampionService) {}
 
   ngOnInit(): void {
@@ -16,6 +17,10 @@ export class RandomChampionComponent implements OnInit {
   }
 
   loadRandomChamp(): void {
+    this.picking = false;
+    setTimeout(() => {
+      this.picking = true
+    }, 500);
     this.championService.getChampions().subscribe((champData: any) => {
       let allChamps = Object.values(champData.data);
       

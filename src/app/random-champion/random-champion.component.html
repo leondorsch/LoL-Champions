@@ -1,9 +1,17 @@
-
 <div class="champion-card" *ngIf="champion">
-    <img [src]="'https://ddragon.leagueoflegends.com/cdn/14.13.1/img/champion/' + champion.image.full" [alt]="champion.name" />
-    <h3>{{ champion.name }}</h3>
-    <p>{{ champion.title }}</p>
+
+    <ng-container *ngIf="picking; else questionMark">
+        <img *ngIf="picking" [src]="'https://ddragon.leagueoflegends.com/cdn/14.13.1/img/champion/' + champion.image.full"
+            [alt]="champion.name" />
+        <h3 *ngIf="picking">{{ champion.name }}</h3>
+        <p *ngIf="picking">{{ champion.title }}</p>
+    </ng-container>
+
+    <ng-template #questionMark>
+        <img class="question-mark" src="assets/img/questin_mark.svg" alt="">
+    </ng-template>
+    
 </div>
 <div class="reroll-container">
-    <button class="reroll-button" (click)="loadRandomChamp()">Reroll</button>
+    <button class="reroll-button" (click)="loadRandomChamp()">Pick</button>
 </div>

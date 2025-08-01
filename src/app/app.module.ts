@@ -14,8 +14,7 @@ import { RandomChampionComponent } from './random-champion/random-champion.compo
 import { RandomItemsComponent } from './random-items/random-items.component';
 import { SharedComponent } from './shared/shared.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
-import { environment } from 'src/environments/environment';
+
 
 
 @NgModule({
@@ -37,7 +36,6 @@ import { environment } from 'src/environments/environment';
     MatSidenavModule,
     RouterModule,
     HttpClientModule,
-    provideFirebaseApp(()=> initializeApp(environment.firebaseConfig)),
   ],
   providers: [],
   bootstrap: [AppComponent]

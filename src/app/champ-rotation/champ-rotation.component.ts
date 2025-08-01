@@ -22,13 +22,10 @@ export class FreeChampsComponent implements OnInit {
   loadFreeChamps(): void {
     this.championService.getChampions().subscribe((champData: any) => {
       let allChamps = Object.values(champData.data);
-
       this.ChampionRotationService.getFreeRotation().subscribe((rotation: any) => {
         let freeIds: number[] = rotation.freeChampionIds;
 
-
-
-        this.freeChamps = allChamps.filter((champ: any) => 
+        this.freeChamps = allChamps.filter((champ: any) =>
           freeIds.includes(+champ.key)
         );
       });
